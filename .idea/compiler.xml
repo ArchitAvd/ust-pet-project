@@ -9,11 +9,13 @@
         <module name="api-gateway" />
         <module name="config-server" />
         <module name="service-registry" />
+        <module name="airport-service" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="airport-service" options="-parameters" />
       <module name="api-gateway" options="-parameters" />
       <module name="config-server" options="-parameters" />
       <module name="service-registry" options="-parameters" />
